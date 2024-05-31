@@ -1,0 +1,84 @@
+.container {
+    padding: 15px;
+}
+
+/* Style the cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure the video or image fills the card and maintains aspect ratio */
+.ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+}
+
+.ratio iframe,
+.ratio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Style the card body */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Optional: Style for carousel */
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-inner img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
